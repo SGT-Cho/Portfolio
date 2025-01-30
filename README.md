@@ -67,6 +67,12 @@
 - **사용 기술**: Python, GCP Speech to Text API (외부 라이브러리 사용 최소화)
 - **GitHub 링크**:[Speech_recognition](https://github.com/SGT-Cho/speech_recognition)
 
+### **Llama 3.1 8b Finetuning**
+
+- **설명**: META의 Llama 3.1 8b 모델을 한식데이터를 이용해 파인튜닝
+- **사용 기술**: Langchain, Llama, PEFT, Lora
+- **Huggingface 링크**:[https://huggingface.co/mobilelife/llama3.1_8b_korean_food_finetuned](https://huggingface.co/mobilelife)
+
 ## **📜 Certifications & Courses**
 
 - K-디지털 트레이닝 [인공지능 혁신학교 AIFFEL(아이펠) :코어 과정] - [2022-11-21~2023-05-08]
