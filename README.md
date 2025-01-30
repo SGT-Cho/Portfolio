@@ -55,7 +55,7 @@
 
 ### **LLM project**
 
-- **설명**: 로컬환경에서 작동 가능한 LLM 개발
+- **설명**: 로컬환경에서 작동 가능한 LLM 개발(RAG, Finetuning 적용 등)
 - **사용 기술**: Python, Langchain, LLaMA, PHI4, Deepseek R1, Pytorch, Transformers
 - **GitHub 링크**:[LLM Project](https://github.com/SGT-Cho/LLM)
 
