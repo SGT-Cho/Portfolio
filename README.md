@@ -78,7 +78,7 @@
 
 ![finetuned](./assets/finetuned2.png)
 ![unfinetuned](./assets/finetuned1.png)
-각각 finetuning이 된 모델(왼쪽)과 기본 모델(오른쪽)
+각각 finetuning이 된 모델(첫 번째)과 기본 모델(두 번째)
 - **설명**: META의 Llama 3.1 8b 모델을 한식데이터를 이용해 파인튜닝
 - **사용 기술**: Langchain, Llama, PEFT, Lora
 - **Huggingface 링크**:[Llama3.1_8b_korean_food_finetuned](https://huggingface.co/mobilelife)
