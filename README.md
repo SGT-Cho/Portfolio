@@ -49,6 +49,12 @@
 - **사용 기술**: Jupyter Notebook, OpenCV, YOLO
 - **GitHub 링크**: [RealTimeCarTracking-ComputerVision-](https://github.com/SGT-Cho/RealTimeCarTracking-ComputerVision-)
 
+### **LLM project**
+
+- **설명**: 로컬환경에서 작동 가능한 LLM 개발
+- **사용 기술**: Python, Langchain, LLaMA, PHI4, Deepseek R1, Pytorch, Transformers
+- **GitHub 링크**:[LLM Project](https://github.com/SGT-Cho/LLM)
+
 ## **📜 Certifications & Courses**
 
 - K-디지털 트레이닝 [인공지능 혁신학교 AIFFEL(아이펠) :코어 과정] - [2022-11-21~2023-05-08]
