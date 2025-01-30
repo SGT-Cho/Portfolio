@@ -59,7 +59,7 @@
 
 - **설명**: 컴퓨터 비전을 이용한 콘크리트 구조물에서의 균열 탐지
 - **사용 기술**: Python, Pytorch, Transformers
-- **GitHub 링크**:[BLDG_CrackDetection]([https://github.com/SGT-Cho/LLM](https://github.com/SGT-Cho/BldgCrackDetection))
+- **GitHub 링크**:[BLDG_CrackDetection](https://github.com/SGT-Cho/BldgCrackDetection)
 
 ## **📜 Certifications & Courses**
 
