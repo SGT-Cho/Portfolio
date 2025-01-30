@@ -55,6 +55,12 @@
 - **사용 기술**: Python, Langchain, LLaMA, PHI4, Deepseek R1, Pytorch, Transformers
 - **GitHub 링크**:[LLM Project](https://github.com/SGT-Cho/LLM)
 
+### **Building Crack Detection**
+
+- **설명**: 컴퓨터 비전을 이용한 콘크리트 구조물에서의 균열 탐지
+- **사용 기술**: Python, Pytorch, Transformers
+- **GitHub 링크**:[BLDG_CrackDetection]([https://github.com/SGT-Cho/LLM](https://github.com/SGT-Cho/BldgCrackDetection))
+
 ## **📜 Certifications & Courses**
 
 - K-디지털 트레이닝 [인공지능 혁신학교 AIFFEL(아이펠) :코어 과정] - [2022-11-21~2023-05-08]
