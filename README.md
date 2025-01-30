@@ -2,7 +2,6 @@
 
 ## 인적사항(Personal Information)
 
-![프로필 (1).jpg](./%25ED%2594%2584%25EB%25A1%259C%25ED%2595%2584_(1).jpg)
 ![프로필 (1).jpg](./assets/profile.jpg)
 
 📅**생년월일**: 2000.01.15
@@ -40,11 +39,15 @@
 
 ### **AIFFELTHON**
 
+![aiffelton.png](./assets/aiffelton.png)
+
 - **설명**: 모두의연구소의 부트캠프 과정인 AIFFEL 에서 진행한 프로젝트입니다.
 - **사용 기술**: Jupyter Notebook, Tensorflow, Numpy, Pandas, Matplotlib
 - **GitHub 링크**: [AIFFELTHON](https://github.com/SGT-Cho/AIFFELTHON)
 
 ### **RealTimeCarTracking-ComputerVision-**
+
+![cardetection.png](./assets/cardetection.png)
 
 - **설명**: YOLO를 활용한 실시간 차량 추적 프로젝트입니다.
 - **사용 기술**: Jupyter Notebook, OpenCV, YOLO
