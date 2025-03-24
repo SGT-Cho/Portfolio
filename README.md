@@ -24,7 +24,7 @@
 
 ## **🎓 Education**
 
-- **인천대학교 컴퓨터공학부졸업예정**: 2024년 8월
+- **인천대학교 컴퓨터공학부졸업예정**: 2025년 8월
 
 ## ⚙️ Skills
 
@@ -56,7 +56,7 @@
 ### **LLM project**
 
 - **설명**: 로컬환경에서 작동 가능한 LLM 개발(RAG, Finetuning 적용 등)
-- **사용 기술**: Python, Langchain, LLaMA, PHI4, Deepseek R1, Pytorch, Transformers
+- **사용 기술**: Python, Langchain, LLaMA, PHI4, Exaone-deep, Deepseek R1, Pytorch, Transformers, Open-Webui
 - **GitHub 링크**:[LLM Project](https://github.com/SGT-Cho/LLM)
 
 ### **Building Crack Detection**
