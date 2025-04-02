@@ -85,6 +85,7 @@
 
 ### **강화학습 기반 Super Mario Bros 학습 (MadMario)**
 
+![playing](./assets/mario.png)
 - PPO(Proximal Policy Optimization) 알고리즘과 `stable-baselines3` 활용  
 - `SubprocVecEnv`를 통해 최대 8개의 병렬 환경에서 효율적인 학습 수행  
 - `MPS(Metal Performance Shaders)` 디바이스 설정으로 Mac 환경 최적화  
