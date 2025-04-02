@@ -83,6 +83,13 @@
 - **사용 기술**: Langchain, Llama, PEFT, Lora
 - **Huggingface 링크**:[Llama3.1_8b_korean_food_finetuned](https://huggingface.co/mobilelife)
 
+### **강화학습 기반 Super Mario Bros 학습 (MadMario)**
+
+- PPO(Proximal Policy Optimization) 알고리즘과 `stable-baselines3` 활용  
+- `SubprocVecEnv`를 통해 최대 8개의 병렬 환경에서 효율적인 학습 수행  
+- `MPS(Metal Performance Shaders)` 디바이스 설정으로 Mac 환경 최적화  
+- Gym / Gymnasium API 호환 문제 해결 및 VecEnv 기반 학습 안정화
+
 ## **📜 Certifications & Courses**
 
 - K-디지털 트레이닝 [인공지능 혁신학교 AIFFEL(아이펠) :코어 과정] - [2022-11-21~2023-05-08]
