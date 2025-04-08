@@ -86,12 +86,12 @@ I strive to become a developer who solves problems efficiently through diverse t
 - **Huggingface Link**: [Llama3.1_8b_korean_food_finetuned](https://huggingface.co/mobilelife)
 
 ⸻
-
+![playing](./assets/mario.png)
 Reinforcement Learning-based Super Mario Bros Training (MadMario)
-	•	Implemented Proximal Policy Optimization (PPO) using the stable-baselines3 library
-	•	Utilized SubprocVecEnv to enable efficient training across up to 8 parallel environments
-	•	Optimized for macOS by configuring MPS (Metal Performance Shaders) as the training device
-	•	Resolved compatibility issues between Gym and Gymnasium APIs, ensuring stable training with VecEnv
+- Implemented Proximal Policy Optimization (PPO) using the stable-baselines3 library
+- Utilized SubprocVecEnv to enable efficient training across up to 8 parallel environments
+- Optimized for macOS by configuring MPS (Metal Performance Shaders) as the training device
+- Resolved compatibility issues between Gym and Gymnasium APIs, ensuring stable training with VecEnv
 
 ⸻
 
