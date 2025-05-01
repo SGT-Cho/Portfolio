@@ -85,17 +85,34 @@ I strive to become a developer who solves problems efficiently through diverse t
 - **Tech Stack**: Langchain, Llama, PEFT, Lora
 - **Huggingface Link**: [Llama3.1_8b_korean_food_finetuned](https://huggingface.co/mobilelife)
 
-⸻
-### Reinforcement Learning-based Super Mario Bros Training (MadMario)
+### Reinforcement Learning–based Super Mario Bros Training (MadMario)
+![playing](./assets/mario.png)  
+- **Description**: Trained an agent to play Super Mario Bros using PPO and parallel environments.  
+- **Key Details**:  
+  - Used `stable-baselines3` PPO with up to 8 parallel `SubprocVecEnv` instances  
+  - Optimized for Mac MPS (Metal Performance Shaders)  
+  - Resolved Gym/Gymnasium API compatibility for stable VecEnv training  
+- **Tech Stack**: Python, Stable-Baselines3, Gymnasium, PyTorch
 
-![playing](./assets/mario.png)
+### Malicious URL Detection (DACON)
+- **Description**: Developed a phishing URL detection model for the DACON competition by preprocessing and analyzing ~180,000 URLs.  
+- **Key Contributions**: Engineered domain-based and character n-gram features; fused BERT embeddings with a CNN + XGBoost ensemble.  
+- **Tech Stack**: Python, Pandas, scikit-learn, PyTorch, Transformers, XGBoost  
+- **Achievement**: Achieved an F1-score of 0.969
 
-- Implemented Proximal Policy Optimization (PPO) using the stable-baselines3 library
-- Utilized SubprocVecEnv to enable efficient training across up to 8 parallel environments
-- Optimized for macOS by configuring MPS (Metal Performance Shaders) as the training device
-- Resolved compatibility issues between Gym and Gymnasium APIs, ensuring stable training with VecEnv
+### Discord LLM Bot Development & Deployment
+![discordbot](./assets/discordbot.png)  
+- **Description**: Built a Discord chat-assistant bot powered by a local LLM (Gemma3).  
+- **Key Features**: Performs web scraping on user queries and uses RAG (Retrieval-Augmented Generation) for informed responses.  
+- **Tech Stack**: Python, discord.py, LangChain, Docker, Llama.cpp  
+- **Deployment**: Packaged as a Docker container and hosted on GitHub for continuous availability
 
-⸻
+### Pathmaker Destination Recommendation App
+![pathmaker](./assets/pathmaker.webp)  
+- **Description**: Travel destination recommendation service combining Flutter frontend and FastAPI backend.  
+- **Key Contributions**: Designed PostgreSQL schema; implemented RESTful APIs; integrated Google Places API; developed user-preference recommendation algorithm.  
+- **Recommendation Algorithm**: Computes weighted similarity scores based on distance, ratings, and category weight.  
+- **Tech Stack**: Flutter (Dart), FastAPI, PostgreSQL, SQLAlchemy, Google Maps & Places API
 
 ## 📜 Certifications & Courses
 
@@ -110,10 +127,10 @@ I strive to become a developer who solves problems efficiently through diverse t
 
 ## 🌏 Language Skills
 
-- Language Training:
-    - Canada: Aug 2010 - Nov 2010
-- TOEIC: 955 (expired)
-- TOEIC Speaking: 160 (expired)
-- OPIc: IM2 (valid)
-- Enhanced speaking skills significantly during KATUSA service.
+- Language Training: Canada (Aug 2010 – Nov 2010)  
+- TOEIC: 955 (expired)  
+- TOEIC Speaking: 160 (expired)  
+- OPIc: IM2 (valid)  
+- TOEFL: 86 (valid)  
+- Significantly improved speaking skills during KATUSA service.
 

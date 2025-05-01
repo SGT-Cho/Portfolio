@@ -91,6 +91,29 @@
 - `MPS(Metal Performance Shaders)` 디바이스 설정으로 Mac 환경 최적화  
 - Gym / Gymnasium API 호환 문제 해결 및 VecEnv 기반 학습 안정화
 
+### 악성 URL 탐지 (DACON)
+
+- **설명**: DACON 공모전에서 제공된 약 18만 개의 URL 데이터 전처리 및 분석을 수행하여 머신러닝 기반 피싱 URL 탐지 모델 개발  
+- **주요 기여**: 도메인 및 N-그램 특성 추출, BERT 임베딩과 CNN + XGBoost 앙상블 융합  
+- **기술 스택**: Python, Pandas, scikit-learn, PyTorch, Transformers, XGBoost  
+- **성과**: F1-score 0.969 달성
+
+### Discord LLM 봇 개발 및 배포
+
+![discordbot](./assets/discordbot.png)
+- **설명**: 로컬 환경에서 동작하는 LLM(Gemma3)을 활용하여 Discord 서버 내 실시간 대화 지원 봇 개발  
+- **주요 기능**: 사용자 쿼리 시 웹 스크래핑 기반 정보 수집 및 RAG(Retrieval-Augmented Generation)로 답변 생성  
+- **기술 스택**: Python, Discord.py, LangChain, Docker, Llama.cpp  
+- **배포**: Docker 컨테이너로 패키징 후 Github에 업로드하여 배포
+
+### Pathmaker 여행지 추천 앱
+
+![pathmaker](./assets/pathmaker.webp)
+- **설명**: Pathmaker 팀에서 Flutter 기반 프론트엔드와 FastAPI 백엔드를 연동하여 여행지 추천 서비스 개발  
+- **주요 기여**: PostgreSQL 데이터베이스 설계, RESTful API 구현, Google Places API 연동, 사용자 선호도 기반 추천 알고리즘 구현  
+- **추천 알고리즘**: 거리, 평점, 카테고리 가중치 기반 유사도 산정 및 순위 제공  
+- **기술 스택**: Flutter (Dart), FastAPI, PostgreSQL, SQLAlchemy, Google Maps & Places API
+
 ## **📜 Certifications & Courses**
 
 - K-디지털 트레이닝 [인공지능 혁신학교 AIFFEL(아이펠) :코어 과정] - [2022-11-21~2023-05-08]
@@ -109,4 +132,5 @@
 - 토익:955 (만료)
 - 토익스피킹: 160(만료)
 - 오픽(OPIc): IM2(유효)
+- 토플(TOEFL): 86(유효)
 - 카투사 복무하면서 스피킹 실력이 많이 증가하였음.
