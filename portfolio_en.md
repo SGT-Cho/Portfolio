@@ -114,6 +114,26 @@ I strive to become a developer who solves problems efficiently through diverse t
 - **Recommendation Algorithm**: Computes weighted similarity scores based on distance, ratings, and category weight.  
 - **Tech Stack**: Flutter (Dart), FastAPI, PostgreSQL, SQLAlchemy, Google Maps & Places API
 
+### Automated YouTube Shorts Generation using Runpod
+![runpod_workflow](./assets/runpod_workflow.png)
+![youtube_shorts_example](./assets/youtube_shorts_example.png)
+- **Description**: Developed a fully automated workflow system that generates short-form video content based on scripts using RunPod's Stable Diffusion 3. The system handles everything from image generation and TTS voice-over to video editing and saving.
+- **Key Features**:
+    - Automated script generation via Local LLM: Randomly selects a topic from a user-defined list → Calls Local LLM API → Outputs script.
+    - Image generation using RunPod SD3 API: Converts the generated script into image prompts to create visuals with SD3.
+    - Dia 1.6b TTS for voice-over: Processes the script content with TTS to create narration audio.
+    - Video synthesis and text overlay with FFmpeg: Combines SD3 images + TTS audio → Automated video creation (1080x1920, including text).
+- **Tech Stack**: Runpod (Stable Diffusion 3), Local LLM, Dia 1.6b TTS, FFmpeg
+
+### AI-Powered Job Posting Collection & RAG Analysis System
+![careers_discord_bot_example](./assets/careers_discord_bot_jd.png)
+- **Description**: An intelligent system that automatically collects job postings from major Korean IT companies and utilizes RAG (Retrieval-Augmented Generation) technology to intelligently search and recommend job information tailored to user-defined criteria.
+- **Key Features**:
+    - Real-time monitoring and automated information gathering from 10+ company career sites.
+    - Semantic-based job posting search leveraging RAG technology.
+    - Personalized real-time job alerts delivered via a Discord Bot.
+- **Tech Stack**: Python, Selenium, Beautiful Soup, AsyncIO, PostgreSQL, ChromaDB, OpenAI API, Hugging Face Transformers, LangChain, Sentence Transformers, Docker, GitHub Actions, Discord Bot API, PyPDF2, APScheduler
+
 ## 📜 Certifications & Courses
 
 - K-Digital Training [AI Innovation School "AIFFEL": Core Course] - [2022-11-21~2023-05-08]
