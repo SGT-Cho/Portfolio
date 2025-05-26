@@ -1,370 +1,401 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-<title>README.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
-</style>
-
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 </head>
 <body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-
+<h1 id="조민제cho-minjae">조민제(Cho, Minjae)</h1>
+<h2 id="인적사항personal-information">인적사항(Personal
+Information)</h2>
+<figure>
+<img src="./assets/profile.jpg" alt="프로필 (1).jpg" />
+<figcaption aria-hidden="true">프로필 (1).jpg</figcaption>
+</figure>
+<p>📅<strong>생년월일</strong>: 2000.01.15</p>
+<p>📧<strong>이메일</strong>: devcho3356@gmail.com</p>
+<p>🌐<strong>GitHub</strong>: <a
+href="https://github.com/SGT-Cho">SGT-Cho</a></p>
+<p>📝<strong>Velog</strong>: <a
+href="https://velog.io/@sgt-cho/posts">sgt-cho/posts</a></p>
+<h2 id="about-me"><strong>👨‍💻 About Me</strong></h2>
+<p><strong>한 줄 자기소개</strong></p>
+<p>성장과 도전을 두려워하지 않는 개발자 조민제입니다. 기술로 사람들의
+삶을 더 편리하게 만드는 데 기여하는 것을 목표로 하고 있습니다.</p>
+<p><strong>목표/비전</strong></p>
+<p>다양한 기술 스택과 프로젝트 경험을 통해 문제를 효율적으로 해결하고,
+사용자 경험을 최우선으로 고려하는 개발자로 성장하고자 합니다.</p>
+<h2 id="education"><strong>🎓 Education</strong></h2>
+<ul>
+<li><strong>인천대학교 컴퓨터공학부졸업예정</strong>: 2025년 8월</li>
+</ul>
+<h2 id="skills">⚙️ Skills</h2>
+<ul>
+<li>Programming Languages:
+<ul>
+<li><strong>C</strong>, <strong>C++</strong>,
+<strong>Python</strong></li>
+</ul></li>
+<li>Libraries &amp; Frameworks
+<ul>
+<li>:<strong>NumPy</strong>, <strong>Pandas</strong>,
+<strong>PyTorch</strong>, <strong>TensorFlow</strong>,
+<strong>Keras</strong>, <strong>scikit-learn</strong>,
+<strong>OpenCV</strong>, <strong>Matplotlib</strong>,
+<strong>Seaborn</strong>, <strong>XGBoost</strong></li>
+</ul></li>
+<li><strong>Tools &amp; Platforms</strong>
+<ul>
+<li><strong>Jupyter</strong>, <strong>Google Colab</strong>,
+<strong>Amazon AWS</strong>, <strong>Google Cloud</strong>,
+<strong>Docker</strong>, <strong>Rhinoceros</strong>,
+<strong>Anaconda</strong>, <strong>Huggingface</strong></li>
+</ul></li>
+</ul>
+<h2 id="projects"><strong>📂 Projects</strong></h2>
+<h3 id="aiffelthon"><strong>AIFFELTHON</strong></h3>
+<figure>
+<img src="./assets/aiffelton.png" alt="aiffelton.png" />
+<figcaption aria-hidden="true">aiffelton.png</figcaption>
+</figure>
+<ul>
+<li><strong>설명</strong>: 모두의연구소의 부트캠프 과정인 AIFFEL 에서
+진행한 프로젝트입니다.</li>
+<li><strong>사용 기술</strong>: Jupyter Notebook, Tensorflow, Numpy,
+Pandas, Matplotlib</li>
+<li><strong>GitHub 링크</strong>: <a
+href="https://github.com/SGT-Cho/AIFFELTHON">AIFFELTHON</a></li>
+</ul>
+<h3
+id="realtimecartracking-computervision-"><strong>RealTimeCarTracking-ComputerVision-</strong></h3>
+<figure>
+<img src="./assets/cardetection.png" alt="cardetection.png" />
+<figcaption aria-hidden="true">cardetection.png</figcaption>
+</figure>
+<ul>
+<li><strong>설명</strong>: YOLO를 활용한 실시간 차량 추적
+프로젝트입니다.</li>
+<li><strong>사용 기술</strong>: Jupyter Notebook, OpenCV, YOLO</li>
+<li><strong>GitHub 링크</strong>: <a
+href="https://github.com/SGT-Cho/RealTimeCarTracking-ComputerVision-">RealTimeCarTracking-ComputerVision-</a></li>
+</ul>
+<h3 id="llm-project"><strong>LLM project</strong></h3>
+<ul>
+<li><strong>설명</strong>: 로컬환경에서 작동 가능한 LLM 개발(RAG,
+Finetuning 적용 등)</li>
+<li><strong>사용 기술</strong>: Python, Langchain, LLaMA, PHI4,
+Exaone-deep, Deepseek R1, Pytorch, Transformers, Open-Webui</li>
+<li><strong>GitHub 링크</strong>:<a
+href="https://github.com/SGT-Cho/LLM">LLM Project</a></li>
+</ul>
+<h3 id="building-crack-detection"><strong>Building Crack
+Detection</strong></h3>
+<p><img src="./assets/bldgcrack.jpg" alt="Original Image" /> <img
+src="./assets/bldgcrack2.png" alt="Example Prediction" /></p>
+<ul>
+<li><strong>설명</strong>: 컴퓨터 비전을 이용한 콘크리트 구조물에서의
+균열 탐지</li>
+<li><strong>사용 기술</strong>: Python, Pytorch, Transformers</li>
+<li><strong>GitHub 링크</strong>:<a
+href="https://github.com/SGT-Cho/BldgCrackDetection">BLDG_CrackDetection</a></li>
+</ul>
+<h3 id="speechrecognition"><strong>SpeechRecognition</strong></h3>
+<ul>
+<li><strong>설명</strong>: Google Cloud SpeechToText API 를 활용한 음성
+인</li>
+<li><strong>사용 기술</strong>: Python, GCP Speech to Text API (외부
+라이브러리 사용 최소화)</li>
+<li><strong>GitHub 링크</strong>:<a
+href="https://github.com/SGT-Cho/speech_recognition">Speech_recognition</a></li>
+</ul>
+<h3 id="llama-3.1-8b-finetuning"><strong>Llama 3.1 8b
+Finetuning</strong></h3>
+<p><img src="./assets/finetuned2.png" alt="finetuned" /> <img
+src="./assets/finetuned1.png" alt="unfinetuned" /> 각각 finetuning이 된
+모델(첫 번째)과 기본 모델(두 번째) - <strong>설명</strong>: META의 Llama
+3.1 8b 모델을 한식데이터를 이용해 파인튜닝 - <strong>사용 기술</strong>:
+Langchain, Llama, PEFT, Lora - <strong>Huggingface 링크</strong>:<a
+href="https://huggingface.co/mobilelife">Llama3.1_8b_korean_food_finetuned</a></p>
+<h3 id="강화학습-기반-super-mario-bros-학습-madmario"><strong>강화학습
+기반 Super Mario Bros 학습 (MadMario)</strong></h3>
+<p><img src="./assets/mario.png" alt="playing" /> - PPO(Proximal Policy
+Optimization) 알고리즘과 <code>stable-baselines3</code> 활용<br />
+- <code>SubprocVecEnv</code>를 통해 최대 8개의 병렬 환경에서 효율적인
+학습 수행<br />
+- <code>MPS(Metal Performance Shaders)</code> 디바이스 설정으로 Mac 환경
+최적화<br />
+- Gym / Gymnasium API 호환 문제 해결 및 VecEnv 기반 학습 안정화</p>
+<h3 id="악성-url-탐지-dacon">악성 URL 탐지 (DACON)</h3>
+<ul>
+<li><strong>설명</strong>: DACON 공모전에서 제공된 약 18만 개의 URL
+데이터 전처리 및 분석을 수행하여 머신러닝 기반 피싱 URL 탐지 모델
+개발<br />
+</li>
+<li><strong>주요 기여</strong>: 도메인 및 N-그램 특성 추출, BERT
+임베딩과 CNN + XGBoost 앙상블 융합<br />
+</li>
+<li><strong>기술 스택</strong>: Python, Pandas, scikit-learn, PyTorch,
+Transformers, XGBoost<br />
+</li>
+<li><strong>성과</strong>: F1-score 0.969 달성</li>
+</ul>
+<h3 id="discord-llm-봇-개발-및-배포">Discord LLM 봇 개발 및 배포</h3>
+<p><img src="./assets/discordbot.png" alt="discordbot" /> -
+<strong>설명</strong>: 로컬 환경에서 동작하는 LLM(Gemma3)을 활용하여
+Discord 서버 내 실시간 대화 지원 봇 개발<br />
+- <strong>주요 기능</strong>: 사용자 쿼리 시 웹 스크래핑 기반 정보 수집
+및 RAG(Retrieval-Augmented Generation)로 답변 생성<br />
+- <strong>기술 스택</strong>: Python, Discord.py, LangChain, Docker,
+Llama.cpp<br />
+- <strong>배포</strong>: Docker 컨테이너로 패키징 후 Github에 업로드하여
+배포</p>
+<h3 id="pathmaker-여행지-추천-앱">Pathmaker 여행지 추천 앱</h3>
+<p><img src="./assets/pathmaker.png" alt="pathmaker" /> -
+<strong>설명</strong>: Pathmaker 팀에서 Flutter 기반 프론트엔드와
+FastAPI 백엔드를 연동하여 여행지 추천 서비스 개발<br />
+- <strong>주요 기여</strong>: PostgreSQL 데이터베이스 설계, RESTful API
+구현, Google Places API 연동, 사용자 선호도 기반 추천 알고리즘
+구현<br />
+- <strong>추천 알고리즘</strong>: 거리, 평점, 카테고리 가중치 기반
+유사도 산정 및 순위 제공<br />
+- <strong>기술 스택</strong>: Flutter (Dart), FastAPI, PostgreSQL,
+SQLAlchemy, Google Maps &amp; Places API</p>
+<h3 id="runpod-활용-유튜브-숏폼-영상-자동-생성-시스템">Runpod 활용
+유튜브 숏폼 영상 자동 생성 시스템</h3>
+<p><img src="./assets/runpod_workflow.png" alt="runpod_workflow" /> <img
+src="./assets/youtube_shorts_example.png"
+alt="youtube_shorts_example" /></p>
+<ul>
+<li><strong>설명</strong>: RunPod의 Stable Diffusion 3를 활용해 스크립트
+기반 숏폼 콘텐츠를 자동 생성하고, 생성된 이미지와 TTS 음성을 기반으로
+영상 편집, 저장까지 완전 자동화된 워크플로우를 구축한 시스템입니다.</li>
+<li><strong>주요 기능</strong>:
+<ul>
+<li>로컬 LLM 기반 스크립트 생성 자동화: 사용자가 설정한 주제 리스트에서
+랜덤 선택 → 로컬 LLM API 호출 → 스크립트 출력</li>
+<li>RunPod SD3 API를 활용한 이미지 생성: 생성된 스크립트를 이미지
+프롬프트로 변환하여 SD3로 시각 자료 생성</li>
+<li>Dia 1.6b TTS 음성 더빙 처리: 스크립트 내용을 TTS 처리하여 내레이션용
+음성 생성</li>
+<li>FFmpeg 기반 영상 합성 및 텍스트 오버레이 삽입: SD3 이미지 + TTS 음성
+→ 자동 영상화 (1080x1920, 텍스트 포함)</li>
+</ul></li>
+<li><strong>기술 스택</strong>: Runpod (Stable Diffusion 3), Local LLM,
+Dia 1.6b TTS, FFmpeg</li>
+</ul>
+<h3 id="ai-기반-채용정보-수집-및-rag-분석-시스템">AI 기반 채용정보 수집
+및 RAG 분석 시스템</h3>
+<figure>
+<img src="./assets/careers_discord_bot_jd.png"
+alt="careers_discord_bot_example" />
+<figcaption aria-hidden="true">careers_discord_bot_example</figcaption>
+</figure>
+<ul>
+<li><strong>설명</strong>: 한국 주요 IT 기업들의 채용공고를 자동으로
+수집하고, RAG(Retrieval-Augmented Generation) 기술을 활용하여 사용자가
+원하는 조건에 맞는 채용정보를 지능적으로 검색 및 추천하는
+시스템입니다.</li>
+<li><strong>주요 기능</strong>:
+<ul>
+<li>10+ 기업 채용 사이트 실시간 모니터링 및 자동화된 정보 수집</li>
+<li>RAG 기술을 통한 의미 기반 채용공고 검색</li>
+<li>Discord Bot을 통한 맞춤형 채용정보 실시간 알림</li>
+</ul></li>
+<li><strong>기술 스택</strong>: Python, Selenium, Beautiful Soup,
+AsyncIO, PostgreSQL, ChromaDB, OpenAI API, Hugging Face Transformers,
+LangChain, Sentence Transformers, Docker, GitHub Actions, Discord Bot
+API, PyPDF2, APScheduler</li>
+</ul>
+<h2 id="certifications-courses"><strong>📜 Certifications &amp;
+Courses</strong></h2>
+<ul>
+<li>K-디지털 트레이닝 [인공지능 혁신학교 AIFFEL(아이펠) :코어 과정] -
+[2022-11-21~2023-05-08]</li>
+<li>112일 총 840시간</li>
+</ul>
+<h2 id="awards-activities">🏆 Awards &amp; Activities</h2>
+<ul>
+<li>2024 인천대학교 컴퓨터공학부 졸업작품발표회 장려상 수상</li>
+<li>카투사(KATUSA) 복무:
+<ul>
+<li>주한미군특수작전사령부(SOCKOR) 주임원사 운전병: 2020:11~2022.05</li>
+</ul></li>
+</ul>
+<h2 id="language-skills"><strong>🌏 Language Skills</strong></h2>
+<ul>
+<li>어학연수:
+<ul>
+<li>캐나다:2010.08~2010.11</li>
+</ul></li>
+<li>토익:955 (만료)</li>
+<li>토익스피킹: 160(만료)</li>
+<li>오픽(OPIc): IM2(유효)</li>
+<li>토플(TOEFL): 86(유효)</li>
+<li>카투사 복무하면서 스피킹 실력이 많이 증가하였음.</li>
+</ul>
 </body>
 </html>

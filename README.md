@@ -108,7 +108,7 @@
 
 ### Pathmaker 여행지 추천 앱
 
-![pathmaker](./assets/pathmaker.webp)
+![pathmaker](./assets/pathmaker.png)
 - **설명**: Pathmaker 팀에서 Flutter 기반 프론트엔드와 FastAPI 백엔드를 연동하여 여행지 추천 서비스 개발  
 - **주요 기여**: PostgreSQL 데이터베이스 설계, RESTful API 구현, Google Places API 연동, 사용자 선호도 기반 추천 알고리즘 구현  
 - **추천 알고리즘**: 거리, 평점, 카테고리 가중치 기반 유사도 산정 및 순위 제공  
@@ -116,7 +116,8 @@
 
 ### Runpod 활용 유튜브 숏폼 영상 자동 생성 시스템
 ![runpod_workflow](./assets/runpod_workflow.png)
-![youtube_shorts_example](./assets/youtube_shorts_example.png)
+![youtube_shorts_example](./assets/youtube_shorts_example.png)  
+
 - **설명**: RunPod의 Stable Diffusion 3를 활용해 스크립트 기반 숏폼 콘텐츠를 자동 생성하고, 생성된 이미지와 TTS 음성을 기반으로 영상 편집, 저장까지 완전 자동화된 워크플로우를 구축한 시스템입니다.
 - **주요 기능**:
     - 로컬 LLM 기반 스크립트 생성 자동화: 사용자가 설정한 주제 리스트에서 랜덤 선택 → 로컬 LLM API 호출 → 스크립트 출력
@@ -126,7 +127,8 @@
 - **기술 스택**: Runpod (Stable Diffusion 3), Local LLM, Dia 1.6b TTS, FFmpeg
 
 ### AI 기반 채용정보 수집 및 RAG 분석 시스템
-![careers_discord_bot_example](./assets/careers_discord_bot_jd.png)
+![careers_discord_bot_example](./assets/careers_discord_bot_jd.png)  
+
 - **설명**: 한국 주요 IT 기업들의 채용공고를 자동으로 수집하고, RAG(Retrieval-Augmented Generation) 기술을 활용하여 사용자가 원하는 조건에 맞는 채용정보를 지능적으로 검색 및 추천하는 시스템입니다.
 - **주요 기능**:
     - 10+ 기업 채용 사이트 실시간 모니터링 및 자동화된 정보 수집

@@ -108,7 +108,7 @@ I strive to become a developer who solves problems efficiently through diverse t
 - **Deployment**: Packaged as a Docker container and hosted on GitHub for continuous availability
 
 ### Pathmaker Destination Recommendation App
-![pathmaker](./assets/pathmaker.webp)  
+![pathmaker](./assets/pathmaker.png)  
 - **Description**: Travel destination recommendation service combining Flutter frontend and FastAPI backend.  
 - **Key Contributions**: Designed PostgreSQL schema; implemented RESTful APIs; integrated Google Places API; developed user-preference recommendation algorithm.  
 - **Recommendation Algorithm**: Computes weighted similarity scores based on distance, ratings, and category weight.  
@@ -116,7 +116,8 @@ I strive to become a developer who solves problems efficiently through diverse t
 
 ### Automated YouTube Shorts Generation using Runpod
 ![runpod_workflow](./assets/runpod_workflow.png)
-![youtube_shorts_example](./assets/youtube_shorts_example.png)
+![youtube_shorts_example](./assets/youtube_shorts_example.png)  
+
 - **Description**: Developed a fully automated workflow system that generates short-form video content based on scripts using RunPod's Stable Diffusion 3. The system handles everything from image generation and TTS voice-over to video editing and saving.
 - **Key Features**:
     - Automated script generation via Local LLM: Randomly selects a topic from a user-defined list → Calls Local LLM API → Outputs script.
@@ -126,7 +127,8 @@ I strive to become a developer who solves problems efficiently through diverse t
 - **Tech Stack**: Runpod (Stable Diffusion 3), Local LLM, Dia 1.6b TTS, FFmpeg
 
 ### AI-Powered Job Posting Collection & RAG Analysis System
-![careers_discord_bot_example](./assets/careers_discord_bot_jd.png)
+![careers_discord_bot_example](./assets/careers_discord_bot_jd.png)  
+
 - **Description**: An intelligent system that automatically collects job postings from major Korean IT companies and utilizes RAG (Retrieval-Augmented Generation) technology to intelligently search and recommend job information tailored to user-defined criteria.
 - **Key Features**:
     - Real-time monitoring and automated information gathering from 10+ company career sites.

@@ -1,0 +1,5 @@
+(base) minjaecho@Minjaeui-Macmini Portfolio % pandoc -s README.md -o README.html
+(base) minjaecho@Minjaeui-Macmini Portfolio % pandoc -s README.md -o README.html
+(base) minjaecho@Minjaeui-Macmini Portfolio % pandoc -s portfolio_en.md -o portfolio_en.html
+(base) minjaecho@Minjaeui-Macmini Portfolio % pandoc -s portfolio_en.md -o portfolio_en.html
+(base) minjaecho@Minjaeui-Macmini Portfolio % 
